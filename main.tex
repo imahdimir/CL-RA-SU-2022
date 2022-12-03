@@ -1,0 +1,97 @@
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+\input{info}
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+%\href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin}\hfill
+\href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{-0.1in} 
+
+\color{gray} To:\\
+\color{black}
+\recipient\\
+\company\\
+
+
+\vspace{-0.1in}\greeting\ \recipient,\\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+
+My name's Mahdi; I'd like to help you with the research project. 
+Currently, I'm a last semester \& soon be a graduate student in 
+Theoretical Economics at TeIAS. I've been researching Economics \& 
+also coding previous three years at TeIAS. 
+I ranked 79th in the nationwide university entrance examination 
+for Master of Economics in 2019. In the same year
+I graduated with B.Sc. in Electrical Engineering from 
+the Sharif University of Technology. 
+I believe that my previous quantitative/mathematical skills, 
+as well as my excellence in programming with Python, 
+makes me the right candidate for the job.
+
+In my last 3 years at TeIAS as a researcher/programmer, 
+I worked with financial data about TSE. 
+I also coded/modeled multiple search models in labor Economics 
+with Julia to solve the value functions quantitatively. 
+Additionally, I have experience in modeling DSGE models with Dynare/Matlab. 
+Besides that, I have worked with various datasets
+to manage, clean \& categorize them in the area of Finance.
+
+I love research \& coding, especially in the area of Economics.
+After graduation, I hope to work on research projects to strengthen 
+my skills \& deepen my knowledge so I can apply for a Ph.D. in Economics 
+at an excellent university.
+
+Please review my CV for additional details regarding my expertise and
+achievements. Do not hesitate to reach out if you have any questions or need further
+clarification on my experience. I would love to meet with you and discuss the position in
+detail.
+
+\noindent Thank you for your consideration.
+
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+\closer,
+
+\myname\\
+\mytitle
+\end{flushright}
+
+\end{document}
